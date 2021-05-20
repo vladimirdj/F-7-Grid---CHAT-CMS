@@ -1,0 +1,21 @@
+ReWriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule (.*) /index.php/$1 [L]
+
+RewriteRule ^user/([^/.]+)?$ /user.php?user=$_SESSION[user] [L]
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ user.php?user=$_SESSION[user]
+RewriteRule ^([a-zA-Z0-9_-]+)/$ user.php?user=$_SESSION[user]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $index.php [L,QSA]
+
+
+
+ErrorDocument 404 /404.php
+
+IndexIgnore *
