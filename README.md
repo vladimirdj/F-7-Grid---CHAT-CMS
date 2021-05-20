@@ -18,6 +18,16 @@ Second table - Caht & User JOIN function with VIEW
 Second table - DELETE function only CHAT table
 
 More information:
+
+Official website
 1. http://sensationenergy.com/
 
+Documentation
 2. http://sensationenergy.com/tutorial/c_c.php
+
+Example
+3. http://sensationenergy.com/tutorial/funkcija/f7_exp/index.php
+
+
+
+
